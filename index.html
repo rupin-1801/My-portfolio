@@ -7,10 +7,103 @@
   <title>Rupin Bhugra</title>
 </head>
 <body>
-  <header id = "header">
-    
-  </header>
-  <section></section>
-  <footer></footer>
+  <aside>
+    <input type="range" min="0" max = "4" step="1" value="0">
+  </aside>
+  <section id = "main">
+    <section id = "about">
+      <h1>Welcome to my world</h1>
+      <img src = "images/profile.jpg" id = "profile" class="image"/>
+      <h3>Rupin Bhugra</h3>
+      <p id = "description">I'm currently a computer science student and have knowledge about different languages and technical concepts. My interests are competitive programming, web development and machine learning. Let's have a look on my achievements.</p>
+      <article id = "touch">
+        <span>Get in touch</span>
+        <ul id = "icons">
+          <li>gmail</li>
+          <li>github</li>
+          <li>linkedin</li>
+          <li>twitter</li>
+        </ul>
+      </article>
+    </section>
+    <!-- <article id = "game">
+      <h3 id = "game-head">Want something interesting, let's try this game!</h3>
+      <div id = "game-screen"></div>
+    </article> -->
+    <section id = "skills">
+      <h3 id = "skill-head">Skills</h3>
+      <ul>
+        <li>
+          JavaScript
+          <p></p>
+        </li>
+        <li>
+          Python
+          <p></p>
+        </li>
+        <li>
+          Competitive Programming
+          <p></p>
+        </li>
+        <li>
+          HTML and CSS
+          <p></p>
+        </li>
+      </ul>
+    </section>
+    <section id = "projects">
+      <h3 id = "project-head">Projects</h3>
+      <div class = "card">
+        <span class = "title">food delivery website</span>
+        <img src = "images/food.png" alt = "not avialable" style="width:150px;height:100px;"/>
+        <p class = "brief"></p>
+        <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/food-delivery-website-front-end-/"></iframe> -->
+        <button class = "preview">Preview</button>
+        <button class = "live">Live</button>
+      </div>
+      <div class = "card">
+        <span class = "title">guess game</span>
+        <img src = "images/guess.png" style="width:150px;height:100px;" alt = "not avialable"/>
+        <p class = "brief"></p>
+        <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/guess-game-with-js/"></iframe> -->
+        <button class = "preview">Preview</button>
+        <button class = "live">Live</button>
+      </div>
+      <div class = "card">
+        <span class = "title">bouncing balls</span>
+        <img src = "images/bounce.png" style="width:150px;height:100px;" alt = "not avialable"/>
+        <p class = "brief"></p>
+        <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/bouncing_balls/"></iframe> -->
+        <button class = "preview">Preview</button>
+        <button class = "live">Live</button>
+      </div>
+      <div class = "card">
+        <span class = "title">analog clock</span>
+        <img src = "images/clock.png" style="width:150px;height:100px;" alt = "not avialable"/>
+        <p class = "brief"></p>
+        <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/analog-clock/"></iframe> -->
+        <button class = "preview">Preview</button>
+        <button class = "live">Live</button>
+      </div>
+    </section>
+    <section id = "contact">
+      <h3>Contact</h3>
+      <form id = "form">
+        <label for="name">Name</label>
+        <input type = "name">
+        <label for="email">Email</label>
+        <input type = "email">
+        <label for="message">Message</label>
+        <textarea id = "message"></textarea>
+        <button>Send</button>
+      </form>
+      <article id="likes">
+        <span></span>
+        <p>0</p>
+        <span></span>
+        <p>0</p>
+      </article>
+    </section>
+  </section>
 </body>
 </html>
