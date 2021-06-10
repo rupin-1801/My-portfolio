@@ -12,26 +12,32 @@
     <input type="range" min="0" max = "4" step="1" value="0">
   </aside>
   <section class = "main">
-    <section id = "about">
+    <section class = "content">
       <h1 class = "heading">Welcome to my world</h1>
-      <img src = "images/profile.jpg" id = "profile" class="image"/>
-      <h3 class = "name">Rupin Bhugra</h3>
-      <p id = "description">I'm currently a computer science student and have knowledge about different languages and technical concepts. My interests are competitive programming, web development and machine learning. Let's have a look on my achievements.</p>
-      <article id = "touch">
+      <div class="about">
+        <div class = "profile">
+          <img src = "images/profile.jpg" id = "profile-image" class="image"/>
+          <h3 class = "name">Rupin Bhugra</h3>
+        </div>
+        <div class = "description">
+          I'm currently a computer science student and have knowledge about different languages and technical concepts. My interests are competitive programming, web development and machine learning. Let's have a look on my achievements.
+        </div>
+      </div>
+      <article class = "touch">
         <span class="sub-heading">Get in touch</span>
-        <ul id = "icons">
-          <li>gmail</li>
-          <li>github</li>
-          <li>linkedin</li>
-          <li>twitter</li>
-        </ul>
+        <div class = "icons">
+          <img alt = "gmail" src = "./images/message.png"/>
+          <img alt = "github" src = "./images/github.png"/>
+          <img alt = "linkedin" src = "./images/linkedin.png"/>
+          <img alt = "twitter" src = "./images/twitter.png"/>
+        </div>
       </article>
     </section>
     <!-- <article id = "game">
       <h3 id = "game-head">Want something interesting, let's try this game!</h3>
       <div id = "game-screen"></div>
     </article> -->
-    <section id = "skills">
+    <section class = "skills">
       <h3 id = "skill-head">Skills</h3>
       <ul>
         <li>
@@ -52,7 +58,7 @@
         </li>
       </ul>
     </section>
-    <section id = "projects">
+    <section class = "projects">
       <h3 id = "project-head">Projects</h3>
       <div class = "card">
         <span class = "title">food delivery website</span>
@@ -87,7 +93,7 @@
         <button class = "live">Live</button>
       </div>
     </section>
-    <section id = "contact">
+    <section class = "contact">
       <h3>Contact</h3>
       <form id = "form">
         <label for="name">Name</label>

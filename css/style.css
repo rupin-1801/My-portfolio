@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    font-family: 'Iceland', cursive;
+}
+.navigation-line{
+    position: absolute;
+    display: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+    max-height: 550px;
+    width: 100vw;
+}
+.heading{
+    font-size: 48px !important; 
+    color: white;
+    text-align: center;
+}
+.about{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name{
+    color: white;
+    font-size: 36px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.description{
+    max-width: 60vw;
+    color: white;
+    font-size: 28px;
+}
+.touch{
+    display: flex;
+    font-size: 36px;
+    color: white;
+    justify-content: center;
+}
+.icons{
+    margin: 0px 40px;
+}
+.icons img{
+    width: 40px;
+    height: 40px;
+}
+.skills, .projects, .contact{
+    position: absolute;
+    top:554px;
+}
