@@ -1,11 +1,13 @@
 :root{
     --headings: 48px;
     --main-text: 36px;
+    --desc: 32px;
 }
 *{
     box-sizing: border-box;
     margin:0px;
     cursor: default;
+    color: white;
     font-family: 'Iceland', cursive;
 }
 .navigation-line{
@@ -16,18 +18,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: linear-gradient(to right, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
+    background: linear-gradient(45deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
     height: 100vh;
-    color: white;
     max-height: 550px;
     width: 100vw;
 }
-.heading{
-    font-size: var(--headings) !important; 
+.head{
+    font-size:var(--headings);
     text-align: center;
+    padding: 20px 0px;
 }
 .about{
     height: fit-content;
@@ -52,7 +54,7 @@
 }
 .description{
     width: 60vw;
-    font-size: 32px;
+    font-size: var(--desc);
 }
 .touch{
     display: flex;
@@ -71,19 +73,12 @@
     cursor: pointer;
 }
 .skills{
-    background: linear-gradient(45deg, #003576,#00204d, #001222);
-}
-.skill-head{
-    color: white;
-    font-size:var(--headings);
-    background-color: transparent;
-    text-align: center;
-    padding: 20px 0px;
+    background: linear-gradient(0deg, #216af9, #001c4a);
 }
 .skill-list{
     width: 100%;
     display: flex;
-    font-size: var(--main-text);
+    font-size: var(--desc);
     padding: 20px 20px;
     justify-content: center;
     flex-wrap: wrap;
@@ -91,6 +86,7 @@
 .skill-list li{
     list-style: none;
     width:fit-content;
+    color: black;
     background-color: rgba(255,255,255,1);
     border-radius: 25px;
     padding: 5px 10px;
@@ -98,9 +94,61 @@
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4),
         inset -2px -2px 4px rgba(0,0,0,0.4) ;
 }
-.projects, .contact{
+.projects{
+    background: #216AF9;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    min-width:300px !important;
+    max-width: 80vw;
+    min-height: 300px !important; 
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: inset -3px -3px 50px rgba(255,255,255,0.2),
+        -3px -3px 5px rgba(0,0,0,0.2),
+        3px 3px 5px rgba(0,0,0,0.2),
+        inset 3px 3px 50px rgba(255,255,255,0.2);
+    padding: 20px 20px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:300px;
+    border-radius: 10px;
+}
+.card img{
+    width: 250px;
+    height: 150px;
+}
+.desc span{
+    font-size: var(--desc);
+}
+.buttons{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.card button{
+    color: black;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 2px;
+    width: 100px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+.card .preview{
+    background-color: rgb(0,185,0);
+}
+.card .live{
+    background-color:#1859E5;
+}
+.contact{
     position: absolute;
-    top:1000px;
+    top:250vh;
 }
 
 
@@ -108,19 +156,18 @@
     :root{
         --main-text: 30px;
         --headings: 36px;
+        --desc: 22px;
     }
     .image{
         height: 150px;
         width: 150px;
-    }
-    .description{
-        font-size: 22px;
     }
 }
 @media (max-width : 550px){
     :root{
         --headings: 28px;
         --main-text: 22px;
+        --desc: 18px;
     }
     .about{
         flex-direction: column;
@@ -131,7 +178,6 @@
         width: 100px;
     }
     .description{
-        font-size: 18px;
         text-align: center;
     }
     .touch{
