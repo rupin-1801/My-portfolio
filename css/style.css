@@ -1,3 +1,7 @@
+:root{
+    --headings: 48px;
+    --main-text: 36px;
+}
 *{
     box-sizing: border-box;
     margin:0px;
@@ -22,7 +26,7 @@
     width: 100vw;
 }
 .heading{
-    font-size: 48px !important; 
+    font-size: var(--headings) !important; 
     text-align: center;
 }
 .about{
@@ -38,7 +42,7 @@
 }
 .name{
     margin: 20px 0px;
-    font-size: 36px;
+    font-size: var(--main-text);
 }
 .profile{
     display: flex;
@@ -52,7 +56,7 @@
 }
 .touch{
     display: flex;
-    font-size: 36px;
+    font-size: var(--main-text);
     justify-content: flex-end;
 }
 .icons{
@@ -66,30 +70,55 @@
     height: 40px;
     cursor: pointer;
 }
-.skills, .projects, .contact{
+.skills{
+    box-shadow: inset rgba(0,0,0,0.5);
+    border : 5px solid black;
+}
+.skills .skill-head{
+    font-size:var(--headings);
+    background-color: transparent;
+    text-align: center;
+    margin: 20px 0px;
+}
+.skill-list{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    font-size: var(--main-text);
+    padding: 0px 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill-list li{
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+.projects, .contact{
     position: absolute;
-    top:700px;
+    top:1000px;
 }
 
 
 @media (max-width : 768px) and (min-width: 550px){
-    .heading{
-        font-size: 36px !important;
+    :root{
+        --main-text: 30px;
+        --headings: 36px;
     }
     .image{
         height: 150px;
         width: 150px;
-    }
-    .name{
-        font-size: 30px;
     }
     .description{
         font-size: 22px;
     }
 }
 @media (max-width : 550px){
-    .heading{
-        font-size: 28px !important;
+    :root{
+        --headings: 28px;
+        --main-text: 22px;
     }
     .about{
         flex-direction: column;
@@ -99,15 +128,11 @@
         height: 100px;
         width: 100px;
     }
-    .name{
-        font-size: 22px;
-    }
     .description{
         font-size: 18px;
         text-align: center;
     }
     .touch{
-        font-size: 25px;
         justify-content: center;
         width: 100%;
     }
