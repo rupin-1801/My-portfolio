@@ -71,30 +71,32 @@
     cursor: pointer;
 }
 .skills{
-    box-shadow: inset rgba(0,0,0,0.5);
-    border : 5px solid black;
+    background: linear-gradient(45deg, #003576,#00204d, #001222);
 }
-.skills .skill-head{
+.skill-head{
+    color: white;
     font-size:var(--headings);
     background-color: transparent;
     text-align: center;
-    margin: 20px 0px;
+    padding: 20px 0px;
 }
 .skill-list{
-    background-color: transparent;
     width: 100%;
     display: flex;
     font-size: var(--main-text);
-    padding: 0px 20px;
-    justify-content: space-around;
+    padding: 20px 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .skill-list li{
     list-style: none;
-    border: 1px solid black;
+    width:fit-content;
+    background-color: rgba(255,255,255,1);
     border-radius: 25px;
     padding: 5px 10px;
-    margin: 5px 0px;
+    margin: 5px 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4),
+        inset -2px -2px 4px rgba(0,0,0,0.4) ;
 }
 .projects, .contact{
     position: absolute;
