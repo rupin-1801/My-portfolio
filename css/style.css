@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin:0px;
+    cursor: default;
     font-family: 'Iceland', cursive;
 }
 .navigation-line{
@@ -10,26 +11,25 @@
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background: linear-gradient(to right, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
     height: 100vh;
+    color: white;
     max-height: 550px;
     width: 100vw;
 }
 .heading{
     font-size: 48px !important; 
-    color: white;
     text-align: center;
 }
 .about{
-    height: 50vh;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 .image{
     width: 200px;
@@ -37,34 +37,82 @@
     border-radius: 50%;
 }
 .name{
-    color: white;
+    margin: 20px 0px;
     font-size: 36px;
 }
 .profile{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    align-items: center;
+    height: fit-content;
 }
 .description{
-    max-width: 60vw;
-    color: white;
-    font-size: 28px;
+    width: 60vw;
+    font-size: 32px;
 }
 .touch{
     display: flex;
     font-size: 36px;
-    color: white;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .icons{
-    margin: 0px 40px;
+    padding: 0px 5vw;
+}
+.icons a{
+    text-decoration: none;
 }
 .icons img{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .skills, .projects, .contact{
     position: absolute;
-    top:554px;
+    top:700px;
+}
+
+
+@media (max-width : 768px) and (min-width: 550px){
+    .heading{
+        font-size: 36px !important;
+    }
+    .image{
+        height: 150px;
+        width: 150px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .description{
+        font-size: 22px;
+    }
+}
+@media (max-width : 550px){
+    .heading{
+        font-size: 28px !important;
+    }
+    .about{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .image{
+        height: 100px;
+        width: 100px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    .description{
+        font-size: 18px;
+        text-align: center;
+    }
+    .touch{
+        font-size: 25px;
+        justify-content: center;
+        width: 100%;
+    }
+    .icons img{
+        width: 25px;
+        height: 25px;
+    }
 }
