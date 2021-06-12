@@ -56,6 +56,9 @@
     width: 60vw;
     font-size: var(--desc);
 }
+.sub-heading{
+    margin: 10px !important;
+}
 .touch{
     display: flex;
     font-size: var(--main-text);
@@ -70,6 +73,7 @@
 .icons img{
     width: 40px;
     height: 40px;
+    margin: 10px;
     cursor: pointer;
 }
 .skills{
@@ -182,13 +186,15 @@
     }
     .description{
         text-align: center;
+        width: 70vw;
     }
     .touch{
         justify-content: center;
         width: 100%;
+        flex-wrap: wrap;
     }
     .icons img{
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 }
