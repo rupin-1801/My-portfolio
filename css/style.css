@@ -123,6 +123,7 @@
     height:400px;
     border-radius: 10px;
 }
+
 .card img{
     width: 200px;
     height: 150px;
@@ -138,10 +139,9 @@
     display:flex;
     justify-content: space-evenly;
 }
-.card button{
-    color: black;
-    border: none;
+button{
     cursor: pointer;
+    border: none;
     padding: 5px 5px;
     border-radius: 2px;
     width: 100px;
@@ -150,12 +150,60 @@
 .card .preview{
     background-color: rgb(0,185,0);
 }
-.card .live{
+.live{
     background-color:#1859E5;
 }
 .contact{
-    position: absolute;
-    top:300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #216af9;
+    height: fit-content;
+    padding: 20px;
+}
+.contact h3{
+    font-size: var(--headings);
+}
+hr{
+    width:100vw;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    font-size: var(--main-text);
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 400px;
+    box-shadow: 1px 1px 5px black;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+.form input{
+    cursor: text;
+    width: 70%;
+    color: black;
+    outline: none;
+    margin: 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form #message{
+    height: fit-content;
+    text-overflow: ellipsis;
+}
+.form button{
+    margin: 10px 0px;
+}
+.likes{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.likes *{
+    margin: 0px 10px;
 }
 
 
