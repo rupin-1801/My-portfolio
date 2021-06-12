@@ -175,6 +175,7 @@ hr{
     font-size: var(--main-text);
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
     max-width: 400px;
     box-shadow: 1px 1px 5px black;
     height: fit-content;
@@ -182,10 +183,12 @@ hr{
     padding: 10px;
     margin: 20px;
 }
+.form *{
+    color:black;
+}
 .form input{
     cursor: text;
     width: 70%;
-    color: black;
     outline: none;
     margin: 10px 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -196,6 +199,7 @@ hr{
 }
 .form button{
     margin: 10px 0px;
+    color: white;
 }
 .likes{
     display: flex;
