@@ -11,8 +11,28 @@
     font-family: 'Iceland', cursive;
 }
 .navigation-line{
-    position: absolute;
-    display: none;
+    height: 40px;
+    width: 100vh;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    transform: translateY(-10vh) rotate(90deg);
+    align-items: center;
+    transform-origin: -10px 7vh;
+    justify-content: center;
+}
+.slider{
+    -webkit-appearance: none;
+    width:60vh;
+    height:.5px;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: #1859E5;
+    border: 2px solid white;
 }
 .content{
     display: flex;
@@ -21,7 +41,7 @@
     background: linear-gradient(45deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
     height: 100vh;
     max-height: 550px;
     width: 100vw;
@@ -83,7 +103,7 @@
     width: 100%;
     display: flex;
     font-size: var(--desc);
-    padding: 20px 20px;
+    padding: 20px 40px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -105,6 +125,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 0px 20px 0px 40px;
 }
 .card{
     min-width:250px !important;
@@ -222,7 +243,7 @@ hr{
         width: 150px;
     }
 }
-@media (max-width : 550px){
+@media (max-width : 560px){
     :root{
         --headings: 28px;
         --main-text: 22px;
