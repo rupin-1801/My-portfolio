@@ -8,10 +8,14 @@
     margin:0px;
     cursor: default;
     color: white;
+    overflow-x: hidden;
     font-family: 'Iceland', cursive;
 }
 .text-center{
     text-align: center;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 .flex{
     display: flex;
@@ -133,8 +137,36 @@
 .container p{
     font-size: var(--desc);
 }
-#game-screen input{
+.game-screen{
+    margin: 20px 0px;
+}
+.game-screen * {
+    margin: 5px 0px;
+}
+.game-screen input{
     color: black !important;
+    outline: none;
+    cursor: text;
+}
+.play-area{
+    height: fit-content;
+}
+.inputs{
+    width: 40vw;
+}
+.guesses{
+    width: 40vw;
+}
+.guesses *{
+    margin:5px;
+    padding:3px;
+    border-radius: 2px;
+}
+.input-box *{
+    margin: 10px 5px;
+}
+#user-guess{
+    display: none;
 }
 .skills{
     background: linear-gradient(0deg, #216af9, #001c4a);
@@ -210,6 +242,9 @@ button{
     font-size: var(--headings);
     width:100vw;
 }
+hr{
+    width: 100vw;
+}
 .form{
     width: 80vw;
     font-size: var(--main-text);
@@ -280,6 +315,12 @@ button{
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
+    }
+    .play-area{
+        flex-direction: column;
+    }
+    .guesses, .inputs{
+        width: 80vw;
     }
     .icons img{
         width: 30px;

@@ -55,22 +55,25 @@
     <hr>
     <section class = "flex-a-center even col container">
       <p id = "game-head">Let's try my guess game!</p>
-      <div id = "game-screen">
-        <div class="input-limit">
-          <label for="n" id="label">Enter N to select Range[1, N] : </label>
-          <input type="number" id="n" autocomplete="off"/>
-        </div>
-        <div class="user-guess">
-          <label for="guess" id="glabel">Enter your guess : </label>
-          <input type="number" id="guess"/>
-          <div class="status" id="status"></div>
-        </div>
-        <div class = "guesses" id="guesses">
+      <div class = "game-screen flex col">
+        <div class = "play-area flex-a-center around">
+          <div class="inputs">
+            <div class="input-box flex wrap" id = "limit">
+              <label for="n" id="label">Enter N to select Range[1, N]&nbsp; : </label>
+              <input type="number" id="n" autocomplete="off"/>
+            </div>
+            <div class="input-box flex wrap" id="user-guess">
+              <label for="guess" id="glabel">Enter your guess&nbsp; : </label>
+              <input type="number" id="guess"/>
+            </div>
+          </div>
+          <div class = "guesses flex around wrap" id="guesses">
+          </div>
         </div>
         <div id="correct"></div>
         <div> 
             <button class = "preview" id = "reset">Try Again</button>
-            <span id = "rem_guess"></span>
+            &nbsp;&nbsp;<span id = "rem_guess"></span>
         </div>
       </div>
     </section>
@@ -165,7 +168,7 @@
     </section>
     <hr>
     <section id="contact" class = "flex-a-center even col contact">
-      <h3>Contact</h3>
+      <h3 class="text-center head">Contact</h3>
       <form class = "flex-a-center even col form">
         <label for="name">Name</label>
         <input type = "name">
