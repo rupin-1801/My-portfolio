@@ -10,34 +10,70 @@
     color: white;
     font-family: 'Iceland', cursive;
 }
+.text-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.flex-a-center{
+    display: flex;
+    align-items: center;
+}
+.col{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.even{
+    justify-content: space-evenly;
+}
+.around{
+    justify-content: space-around;
+}
+.end{
+    justify-content: flex-end;
+}
 .navigation-line{
     height: 40px;
     width: 100vh;
     background-color: transparent;
     position: fixed;
-    display: flex;
     transform: translateY(-10vh) rotate(90deg);
-    align-items: center;
     transform-origin: -10px 7vh;
-    justify-content: center;
 }
 .slider{
-    -webkit-appearance: none;
-    width:60vh;
-    height:.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vh;
 }
-.slider::-webkit-slider-thumb{
-    -webkit-appearance: none;
+.thumb:checked{
+    background-color: white !important;
+}
+.thumb {
     height: 20px;
-    width:20px;
+    cursor: pointer;
+    width: 20px;
+    -webkit-appearance: none;
     border-radius: 50%;
-    background-color: #1859E5;
+    background-color: transparent;
+    color: white;
+    background-clip: text;
     border: 2px solid white;
 }
+.thumb-line{
+    background-color: white;
+    width: calc(12vh - 20px);
+    padding:0px 20px;
+    height: 1px !important;
+    color: red;
+}
+.thumb:nth-child(5)::after{
+    display:none;
+}
 .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background: linear-gradient(45deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,14 +84,10 @@
 }
 .head{
     font-size:var(--headings);
-    text-align: center;
     padding: 20px 0px;
 }
 .about{
     height: fit-content;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 .image{
     width: 200px;
@@ -67,9 +99,6 @@
     font-size: var(--main-text);
 }
 .profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: fit-content;
 }
 .description{
@@ -80,9 +109,7 @@
     margin: 10px !important;
 }
 .touch{
-    display: flex;
     font-size: var(--main-text);
-    justify-content: flex-end;
 }
 .icons{
     padding: 0px 5vw;
@@ -96,15 +123,23 @@
     margin: 10px;
     cursor: pointer;
 }
+.container{
+    background-color: #001c4a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 50px;
+}
+.container p{
+    font-size: var(--desc);
+}
 .skills{
     background: linear-gradient(0deg, #216af9, #001c4a);
 }
 .skill-list{
     width: 100%;
-    display: flex;
     font-size: var(--desc);
     padding: 20px 40px;
-    justify-content: center;
     flex-wrap: wrap;
 }
 .skill-list li{
@@ -122,8 +157,6 @@
     background: #216AF9;
 }
 .cards{
-    display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0px 20px 0px 40px;
 }
@@ -137,10 +170,6 @@
         inset 3px 3px 50px rgba(255,255,255,0.2);
     padding: 20px 20px;
     margin: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     height:400px;
     border-radius: 10px;
 }
@@ -152,13 +181,8 @@
 .card span{
     font-size: var(--desc);
 }
-.brief{
-    text-align: center;
-}
 .buttons{
     width: 100%;
-    display:flex;
-    justify-content: space-evenly;
 }
 button{
     cursor: pointer;
@@ -175,27 +199,17 @@ button{
     background-color:#1859E5;
 }
 .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #216af9;
     height: fit-content;
     padding: 20px;
 }
 .contact h3{
     font-size: var(--headings);
-}
-hr{
     width:100vw;
 }
 .form{
-    display: flex;
-    flex-direction: column;
     width: 80vw;
     font-size: var(--main-text);
-    justify-content: space-evenly;
-    align-items: center;
     background-color: white;
     max-width: 400px;
     box-shadow: 1px 1px 5px black;
@@ -223,8 +237,6 @@ hr{
     color: white;
 }
 .likes{
-    display: flex;
-    justify-content: center;
     margin: 5px;
 }
 .likes *{

@@ -9,14 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
 </head>
 <body >
-  <aside class="navigation-line">
-    <input class = "slider" type="range" min="0" max = "4" step="1" value=[0,1]>
+  <aside class="flex-a-center center navigation-line">
+    <div class="slider">
+      <input type="radio" name="nav" value="about" class="thumb" checked>
+      <div class="thumb-line"></div>
+      <input type="radio" name="nav" value="container" class="thumb">
+      <div class="thumb-line"></div>
+      <input type="radio" name="nav" value="skills" class="thumb">
+      <div class="thumb-line"></div>
+      <input type="radio" name="nav" value="projects" class="thumb">
+      <div class="thumb-line"></div>
+      <input type="radio" name="nav" value="contact" class="thumb">
+    </div>
   </aside>
   <section id="main" class = "main">
-    <section class = "content">
-      <h1 class = "head">Welcome to my world</h1>
-      <div class="about">
-        <div class = "profile">
+    <section class = "flex around col content">
+      <h1 class = "text-center head">Welcome to my world</h1>
+      <div class="flex-a-center around about">
+        <div class = "flex-a-center col profile">
           <img src = "images/profile.jpg" id = "profile-image" class="image"/>
           <h3 class = "name">Rupin Bhugra</h3>
         </div>
@@ -24,7 +34,7 @@
           I'm currently a computer science student and have knowledge about different languages and technical concepts. My interests are competitive programming, web development and machine learning. Let's have a look on my achievements.
         </div>
       </div>
-      <article class = "touch">
+      <article class = "flex end touch">
         <span class="sub-heading">Get in touch</span>
         <div class = "icons">
           <a href = "https://www.gmail.com" target = "_blank">
@@ -42,14 +52,15 @@
         </div>
       </article>
     </section>
-    <section class = "container">
-      <h3 id = "game-head">Want something interesting, let's try this game!</h3>
+    <hr>
+    <section class = "flex-a-center even col container">
+      <p id = "game-head">Let's try my guess game!</p>
       <div id = "game-screen"></div>
     </section>
     <hr>
     <section id="skill" class = "skills">
-      <h3 class = "head">Skills</h3>
-      <ul class="skill-list">
+      <h3 class = "text-center head">Skills</h3>
+      <ul class="flex center skill-list">
         <li>
           JavaScript
         </li>
@@ -81,54 +92,54 @@
     </section>
     <hr>
     <section id="projects" class = "projects">
-      <h3 class = "head">Projects</h3>
-      <div class = "cards">
-        <div class = "card">
+      <h3 class = "text-center head">Projects</h3>
+      <div class = "flex even cards">
+        <div class = "flex-a-center even col card">
           <img src = "images/guess.png" alt = "not avialable"/>
           <span class = "title">Guess game</span>
-          <p class = "brief">Guess game to guess the number selected by program, made using html, css, and javascript. </p>
+          <p class = "text-center brief">Guess game to guess the number selected by program, made using html, css, and javascript. </p>
           <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/guess-game-with-js/"></iframe> -->
-          <div class = "buttons">
+          <div class = "flex even buttons">
             <button class = "preview">Preview&nbsp;&nbsp;<i class="bi-caret-right-fill"></i></button>
             <button class = "live">Live&nbsp;&nbsp;<i class="bi-box-arrow-up-right"></i></button>
           </div>
         </div>
-        <div class = "card">
+        <div class = "flex-a-center even col card">
           <img src = "images/bounce.png" alt = "not avialable"/>
           <span class = "title">Bouncing balls</span>
-          <p class = "brief">Bouncing balls game, catch all the balls by clicking on them moving with different velocities, made using html, css, and js.</p>
+          <p class = "text-center brief">Bouncing balls game, catch all the balls by clicking on them moving with different velocities, made using html, css, and js.</p>
           <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/bouncing_balls/"></iframe> -->
-          <div class = "buttons">
+          <div class = "flex even buttons">
             <button class = "preview">Preview&nbsp;&nbsp;<i class="bi-caret-right-fill"></i></button>
             <button class = "live">Live&nbsp;&nbsp;<i class="bi-box-arrow-up-right"></i></button>
           </div>
         </div>
-        <div class = "card">
+        <div class = "flex-a-center even col card">
           <img src = "images/draw.png" alt = "not avialable"/>
           <span class = "title">Drawing board</span>
-          <p class = "brief">Drawing board just like your paint, includes features of drawing and erasing with different stroke sizes, and changing stroke colour, made with html, css, and js.</p>
+          <p class = "text-center brief">Drawing board just like your paint, includes features of drawing and erasing with different stroke sizes, and changing stroke colour, made with html, css, and js.</p>
           <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/drawing-board/"></iframe> -->
-          <div class = "buttons">
+          <div class = "flex even buttons">
             <button class = "preview">Preview&nbsp;&nbsp;<i class="bi-caret-right-fill"></i></button>
             <button class = "live">Live&nbsp;&nbsp;<i class="bi-box-arrow-up-right"></i></button>
           </div>
         </div>
-        <div class = "card">
+        <div class = "flex-a-center even col card">
           <img src = "images/food.png" alt = "not avialable"/>
           <span class = "title">Food delivery website</span>
-          <p class = "brief">Made a landing page for food delivery website using html, css, and javascript.</p>
+          <p class = "text-center brief">Made a landing page for food delivery website using html, css, and javascript.</p>
           <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/food-delivery-website-front-end-/"></iframe> -->
-          <div class = "buttons">
+          <div class = "flex even buttons">
             <button class = "preview">Preview&nbsp;&nbsp;<i class="bi-caret-right-fill"></i></button>
             <button class = "live">Live&nbsp;&nbsp;<i class="bi-box-arrow-up-right"></i></button>
           </div>        
         </div>
-        <div class = "card">
+        <div class = "flex-a-center even col card">
           <img src = "images/clock.png" alt = "not avialable"/>
           <span class = "title">Analog clock</span>
-          <p class = "brief">Displays your systems time in well designed analog as well as digital clock, made using html, css, and javascript.</p>
+          <p class = "text-center brief">Displays your systems time in well designed analog as well as digital clock, made using html, css, and javascript.</p>
           <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/analog-clock/"></iframe> -->
-          <div class = "buttons">
+          <div class = "flex even buttons">
             <button class = "preview">Preview&nbsp;&nbsp;<i class="bi-caret-right-fill"></i></button>
             <button class = "live">Live&nbsp;&nbsp;<i class="bi-box-arrow-up-right"></i></button>
           </div>
@@ -136,9 +147,9 @@
       </div>
     </section>
     <hr>
-    <section id="contact" class = "contact">
+    <section id="contact" class = "flex-a-center even col contact">
       <h3>Contact</h3>
-      <form class = "form">
+      <form class = "flex-a-center even col form">
         <label for="name">Name</label>
         <input type = "name">
         <label for="email">Email</label>
@@ -148,7 +159,7 @@
         <button class="live">Send</button>
       </form>
       <hr>
-      <article class="likes">
+      <article class="flex center likes">
         <p>
           <i class="bi-hand-thumbs-up"></i>&nbsp;&nbsp;49
         </p>
