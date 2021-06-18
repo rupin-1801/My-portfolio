@@ -12,19 +12,27 @@ var guess;
 var guess_count;
 number.addEventListener("keydown", (k) => {
     if(k.key == "Enter"){
-        while(pre_guess.firstChild) pre_guess.removeChild(pre_guess.firstChild);
-        number.style.display="none";
-        label.style.display="none";
-        guess_box.style.display="flex";
-        value = number.value;
-        gcount.innerText="Guess:";
-        guess = Math.floor(Math.random()*value)+1;
-        guess_value.disabled=false;
-        glabel.innerText="Enter your guess[1, "+number.value+"]: ";
-        guess_count = Math.floor(Math.log2(value));
-        gcount.innerText+=" "+guess_count;
-        guess_value.focus();
-        reset.style.display="inline";
+        if(number.value >= 2){
+            while(pre_guess.firstChild) pre_guess.removeChild(pre_guess.firstChild);
+            number.style.display="none";
+            label.style.display="none";
+            guess_box.style.display="flex";
+            value = number.value;
+            gcount.innerText="Guess:";
+            guess = Math.floor(Math.random()*value)+1;
+            guess_value.disabled=false;
+            glabel.innerText="Enter your guess[1, "+number.value+"]: ";
+            guess_count = Math.floor(Math.log2(value));
+            gcount.innerText+=" "+guess_count;
+            guess_value.focus();
+            reset.style.display="inline";
+        }
+        else{
+            correct.innerText="Enter value greater than 1";
+            setTimeout(()=> {
+                correct.innerText="";
+            }, 1000);
+        }
     }
 });
 guess_value.addEventListener("keydown", (k) => {
