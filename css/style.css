@@ -133,6 +133,9 @@
 .container p{
     font-size: var(--desc);
 }
+#game-screen input{
+    color: black !important;
+}
 .skills{
     background: linear-gradient(0deg, #216af9, #001c4a);
 }
@@ -192,7 +195,7 @@ button{
     width: 100px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
-.card .preview{
+.preview{
     background-color: rgb(0,185,0);
 }
 .live{

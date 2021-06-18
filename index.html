@@ -55,7 +55,24 @@
     <hr>
     <section class = "flex-a-center even col container">
       <p id = "game-head">Let's try my guess game!</p>
-      <div id = "game-screen"></div>
+      <div id = "game-screen">
+        <div class="input-limit">
+          <label for="n" id="label">Enter N to select Range[1, N] : </label>
+          <input type="number" id="n" autocomplete="off"/>
+        </div>
+        <div class="user-guess">
+          <label for="guess" id="glabel">Enter your guess : </label>
+          <input type="number" id="guess"/>
+          <div class="status" id="status"></div>
+        </div>
+        <div class = "guesses" id="guesses">
+        </div>
+        <div id="correct"></div>
+        <div> 
+            <button class = "preview" id = "reset">Try Again</button>
+            <span id = "rem_guess"></span>
+        </div>
+      </div>
     </section>
     <hr>
     <section id="skill" class = "skills">
@@ -170,5 +187,6 @@
       <hr>
     </section>
   </section>
+  <script type="text/javascript" src="js/guessgame.js"></script>
 </body>
 </html>
