@@ -80,9 +80,6 @@
 .thumb:nth-child(5)::after{
     display:none;
 }
-#main{
-    overflow: scroll;
-}
 .content{
     background: linear-gradient(45deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5)), url("../images/background.jpg");
     background-repeat: no-repeat;
