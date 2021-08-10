@@ -7,9 +7,11 @@ const pre_guess = document.getElementById("guesses");
 const reset = document.getElementById("reset");
 const guess_value = document.getElementById("guess");
 const guess_box = document.getElementById("user-guess");
+
 let value=100;
 var guess;
 var guess_count;
+
 number.addEventListener("keydown", (k) => {
     if(k.key == "Enter"){
         if(number.value >= 2){
