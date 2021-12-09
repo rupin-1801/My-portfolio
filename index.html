@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
 </head>
-<body >
+
+<body>
   <aside class="flex-a-center center navigation-line">
     <div class="slider">
       <input type="radio" name="nav" value="about" class="thumb" checked>
@@ -22,93 +24,93 @@
       <input type="radio" name="nav" value="contact" class="thumb">
     </div>
   </aside>
-  <section id="main" class = "main">
-    <section id="about" class = "flex around col content">
-      <h1 class = "text-center head">
+  <section id="main" class="main">
+    <section id="about" class="flex around col content">
+      <h1 class="text-center head">
         Welcome to my world
       </h1>
       <div class="flex-a-center around about">
-        <div class = "flex-a-center col profile">
-          <img src = "images/profile.jpg" id = "profile-image" class="image"/>
-          <h3 class = "name">
+        <div class="flex-a-center col profile">
+          <img src="images/profile.jpg" id="profile-image" class="image" />
+          <h3 class="name">
             Rupin Bhugra
           </h3>
         </div>
-        <div class = "description">
-          I'm currently a computer science student and have knowledge about different 
-          languages and technical concepts. My interests are competitive programming, 
+        <div class="description">
+          I'm currently a computer science student and have knowledge about different
+          languages and technical concepts. My interests are competitive programming,
           web development and machine learning. Let's have a look on my achievements.
         </div>
       </div>
-      <article class = "flex end touch">
+      <article class="flex end touch">
         <span class="sub-heading">
           Get in touch
         </span>
-        <div class = "icons">
-          <a href = "https://www.gmail.com" target = "_blank">
-            <img alt = "gmail" src = "./images/message.png"/>
+        <div class="icons">
+          <a href="https://www.gmail.com" target="_blank">
+            <img alt="gmail" src="./images/message.png" />
           </a>
-          <a href = "https://github.com/rupin-1801" target = "_blank">
-            <img alt = "github" src = "./images/github.png"/>
+          <a href="https://github.com/rupin-1801" target="_blank">
+            <img alt="github" src="./images/github.png" />
           </a>
-          <a href = "https://www.linkedin.com/in/rupin-bhugra/" target = "_blank">
-            <img alt = "linkedin" src = "./images/linkedin.png"/>
+          <a href="https://www.linkedin.com/in/rupin-bhugra/" target="_blank">
+            <img alt="linkedin" src="./images/linkedin.png" />
           </a>
-          <a href = "https://twitter.com/BhugraRupin" target = "_blank">
-            <img alt = "twitter" src = "./images/twitter.png"/>
+          <a href="https://twitter.com/BhugraRupin" target="_blank">
+            <img alt="twitter" src="./images/twitter.png" />
           </a>
         </div>
       </article>
     </section>
     <hr>
-    <section id="game" class = "flex-a-center even col container">
+    <section id="game" class="flex-a-center even col container">
       <div class="heading flex-a-center wrap">
-        <p id = "game-head">
+        <p id="game-head">
           Let's try my guess game!
         </p>
         <div class="flex-a-center">
           <p>
-            <div class="ball up"></div>
-            Guess larger
+          <div class="ball up"></div>
+          Guess larger
           </p>
           <p>
-            <div class="ball down"></div>
-            Guess smaller
+          <div class="ball down"></div>
+          Guess smaller
           </p>
         </div>
       </div>
-      <div class = "game-screen flex col">
-        <div class = "play-area flex-a-center around">
+      <div class="game-screen flex col">
+        <div class="play-area flex-a-center around">
           <div class="inputs">
-            <div class="input-box flex wrap" id = "limit">
+            <div class="input-box flex wrap" id="limit">
               <label for="n" id="label">
-                Enter N to select Range[1, N]&nbsp; : 
+                Enter N to select Range[1, N]&nbsp; :
               </label>
-              <input type="number" id="n" autocomplete="off"/>
+              <input type="number" id="n" autocomplete="off" />
             </div>
             <div class="input-box flex wrap" id="user-guess">
               <label for="guess" id="glabel">
-                Enter your guess&nbsp; : 
+                Enter your guess&nbsp; :
               </label>
-              <input type="number" id="guess"/>
+              <input type="number" id="guess" />
             </div>
           </div>
-          <div class = "guesses flex around wrap" id="guesses">
+          <div class="guesses flex around wrap" id="guesses">
           </div>
         </div>
         <div id="correct"></div>
-        <div> 
-            <button class = "preview" id = "reset">
-              Try Again
-            </button>
-            &nbsp;&nbsp;
-            <span id = "rem_guess"></span>
+        <div>
+          <button class="preview" id="reset">
+            Try Again
+          </button>
+          &nbsp;&nbsp;
+          <span id="rem_guess"></span>
         </div>
       </div>
     </section>
     <hr>
-    <section id="skill" class = "skills">
-      <h3 class = "text-center head">
+    <section id="skill" class="skills">
+      <h3 class="text-center head">
         Skills
       </h3>
       <ul class="flex center skill-list">
@@ -119,7 +121,7 @@
           Python
         </li>
         <li>
-          C++
+          React
         </li>
         <li>
           Java
@@ -128,7 +130,7 @@
           Git and Github
         </li>
         <li>
-          React
+          C++
         </li>
         <li>
           CSS3
@@ -142,121 +144,145 @@
       </ul>
     </section>
     <hr>
-    <section id="projects" class = "projects">
-      <h3 class = "text-center head">
+    <section id="projects" class="projects">
+      <h3 class="text-center head">
         Projects
       </h3>
-      <div class = "flex even cards">
-        <div class = "flex-a-center even col card">
-          <img src = "images/guess.png" alt = "not avialable"/>
-          <span class = "title">
+      <div class="flex even cards">
+        <div class="flex-a-center even col card">
+          <img src="images/pracbook.png" alt="not avialable" />
+          <span class="title">
+            PracBook
+          </span>
+          <p class="text-center brief">
+            Made a portal for pracitcal examination, with support for both objective type and coding type questions,
+            using MERN stack technology in a team of 4 members.
+          </p>
+          <!-- <iframe width="500px" height="400px" src="https://pracbook.herokuapp.com"></iframe> -->
+          <div class="flex even buttons">
+            <button class="preview">
+              Preview&nbsp;&nbsp;
+              <i class="bi-caret-right-fill"></i>
+            </button>
+            <a href="https://pracbook.herokuapp.com" target="_blank">
+              <button class="live">
+                Live&nbsp;&nbsp;
+                <i class="bi-box-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="flex-a-center even col card">
+          <img src="images/guess.png" alt="not avialable" />
+          <span class="title">
             Guess game
           </span>
-          <p class = "text-center brief">
-            Guess game to guess the number selected by program, made using 
-            html, css, and javascript. 
+          <p class="text-center brief">
+            Guess game to guess the number selected by program, made using
+            html, css, and javascript.
           </p>
           <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/guess-game-with-js/"></iframe> -->
-          <div class = "flex even buttons">
-            <button class = "preview">
+          <div class="flex even buttons">
+            <button class="preview">
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
-            <a href="https://rupin-1801.github.io/guess-game-with-js/">
-              <button class = "live">
+            <a href="https://rupin-1801.github.io/guess-game-with-js/" target="_blank">
+              <button class="live">
                 Live&nbsp;&nbsp;
                 <i class="bi-box-arrow-up-right"></i>
               </button>
             </a>
           </div>
         </div>
-        <div class = "flex-a-center even col card">
-          <img src = "images/bounce.png" alt = "not avialable"/>
-          <span class = "title">
+        <div class="flex-a-center even col card">
+          <img src="images/froshhub.png" alt="not avialable" />
+          <span class="title">
+            Froshhub
+          </span>
+          <p class="text-center brief">
+            Made a portal to make college students aware about current placement activities in their college, trends in
+            technology, upcoming workshops, and about coding platforms and upcoming contests,
+            using html, css, javascript, and firebase in a team of 4 members.
+          </p>
+          <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/FroshHub/"></iframe> -->
+          <div class="flex even buttons">
+            <button class="preview">
+              Preview&nbsp;&nbsp;
+              <i class="bi-caret-right-fill"></i>
+            </button>
+            <a href="https://rupin-1801.github.io/FroshHub/" target="_blank">
+              <button class="live">
+                Live&nbsp;&nbsp;
+                <i class="bi-box-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="flex-a-center even col card">
+          <img src="images/bounce.png" alt="not avialable" />
+          <span class="title">
             Bouncing balls
           </span>
-          <p class = "text-center brief">
+          <p class="text-center brief">
             Bouncing balls game, catch all the balls by clicking on them moving
-             with different velocities, made using html, css, and js.
+            with different velocities, made using html, css, and js.
           </p>
           <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/bouncing_balls/"></iframe> -->
-          <div class = "flex even buttons">
-            <button class = "preview">
+          <div class="flex even buttons">
+            <button class="preview">
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
-            <a href="https://rupin-1801.github.io/bouncing_balls/">
-              <button class = "live">
+            <a href="https://rupin-1801.github.io/bouncing_balls/" target="_blank">
+              <button class="live">
                 Live&nbsp;&nbsp;
                 <i class="bi-box-arrow-up-right"></i>
               </button>
             </a>
           </div>
         </div>
-        <div class = "flex-a-center even col card">
-          <img src = "images/draw.png" alt = "not avialable"/>
-          <span class = "title">
+        <div class="flex-a-center even col card">
+          <img src="images/draw.png" alt="not avialable" />
+          <span class="title">
             Drawing board
           </span>
-          <p class = "text-center brief">
-            Drawing board just like your paint, includes features of drawing 
-            and erasing with different stroke sizes, and changing stroke colour, 
+          <p class="text-center brief">
+            Drawing board just like your paint, includes features of drawing
+            and erasing with different stroke sizes, and changing stroke colour,
             made with html, css, and js.
           </p>
           <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/drawing-board/"></iframe> -->
-          <div class = "flex even buttons">
-            <button class = "preview">
+          <div class="flex even buttons">
+            <button class="preview">
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
-            <a href="https://rupin-1801.github.io/drawing-board/">
-              <button class = "live">
+            <a href="https://rupin-1801.github.io/drawing-board/" target="_blank">
+              <button class="live">
                 Live&nbsp;&nbsp;
                 <i class="bi-box-arrow-up-right"></i>
               </button>
             </a>
           </div>
         </div>
-        <div class = "flex-a-center even col card">
-          <img src = "images/food.png" alt = "not avialable"/>
-          <span class = "title">
-            Food delivery website
-          </span>
-          <p class = "text-center brief">
-            Made a landing page for food delivery website using html, css, 
-            and javascript.
-          </p>
-          <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/food-delivery-website-front-end-/"></iframe> -->
-          <div class = "flex even buttons">
-            <button class = "preview">
-              Preview&nbsp;&nbsp;
-              <i class="bi-caret-right-fill"></i>
-            </button>
-            <a href="https://rupin-1801.github.io/food-delivery-website-front-end-/">
-              <button class = "live">
-                Live&nbsp;&nbsp;
-                <i class="bi-box-arrow-up-right"></i>
-              </button>
-            </a>
-          </div>        
-        </div>
-        <div class = "flex-a-center even col card">
-          <img src = "images/clock.png" alt = "not avialable"/>
-          <span class = "title">
+        <div class="flex-a-center even col card">
+          <img src="images/clock.png" alt="not avialable" />
+          <span class="title">
             Analog clock
           </span>
-          <p class = "text-center brief">
-            Displays your systems time in well designed analog as well as 
+          <p class="text-center brief">
+            Displays your systems time in well designed analog as well as
             digital clock, made using html, css, and javascript.
           </p>
           <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/analog-clock/"></iframe> -->
-          <div class = "flex even buttons">
-            <button class = "preview">
+          <div class="flex even buttons">
+            <button class="preview">
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
-            <a href="https://rupin-1801.github.io/analog-clock/">
-              <button class = "live">
+            <a href="https://rupin-1801.github.io/analog-clock/" target="_blank">
+              <button class="live">
                 Live&nbsp;&nbsp;
                 <i class="bi-box-arrow-up-right"></i>
               </button>
@@ -266,23 +292,23 @@
       </div>
     </section>
     <hr>
-    <section id="contact" class = "flex-a-center even col contact">
+    <section id="contact" class="flex-a-center even col contact">
       <h3 class="text-center head">
         Contact
       </h3>
-      <form class = "flex-a-center even col form">
+      <form class="flex-a-center even col form">
         <label for="name">
           Name
         </label>
-        <input type = "name">
+        <input type="name">
         <label for="email">
           Email
         </label>
-        <input type = "email">
+        <input type="email">
         <label for="message">
           Message
         </label>
-        <input id = "message">
+        <input id="message">
         <button class="live">
           Send
         </button>
@@ -306,4 +332,5 @@
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/guessgame.js"></script>
 </body>
+
 </html>
