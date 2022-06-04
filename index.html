@@ -15,13 +15,9 @@
     <div class="slider">
       <input type="radio" name="nav" value="about" class="thumb" checked>
       <div class="thumb-line"></div>
-      <input type="radio" name="nav" value="container" class="thumb">
-      <div class="thumb-line"></div>
       <input type="radio" name="nav" value="skills" class="thumb">
       <div class="thumb-line"></div>
-      <input type="radio" name="nav" value="projects" class="thumb">
-      <div class="thumb-line"></div>
-      <input type="radio" name="nav" value="contact" class="thumb">
+      <input type="radio" name="nav" value="projects" class="thumb"> 
     </div>
   </aside>
   <section id="main" class="main">
@@ -36,10 +32,12 @@
             Rupin Bhugra
           </h3>
         </div>
-        <div class="description">
-          I'm currently a computer science student and have knowledge about different
-          languages and technical concepts. My interests are competitive programming,
-          web development and machine learning. Let's have a look on my achievements.
+        <div class="outer-desc">
+          <div class="description">
+            I'm currently a computer science student and have knowledge about different
+            languages and technical concepts. My interests are web development, competitive programming,
+            and machine learning. Scroll down to have a look on my achievements.
+          </div>
         </div>
       </div>
       <article class="flex end touch">
@@ -110,7 +108,7 @@
     </section>
     <hr>
     <section id="skill" class="skills">
-      <h3 class="text-center head">
+      <h3 class="titles">
         Skills
       </h3>
       <ul class="flex center skill-list">
@@ -124,22 +122,22 @@
           React
         </li>
         <li>
-          Java
-        </li>
-        <li>
           Git and Github
-        </li>
-        <li>
-          C++
         </li>
         <li>
           CSS3
         </li>
         <li>
-          Data Structures
+          NodeJs
+        </li>
+        <li>
+          VS code
         </li>
         <li>
           HTML5
+        </li>
+        <li>
+          Android studio
         </li>
       </ul>
     </section>
@@ -150,7 +148,32 @@
       </h3>
       <div class="flex even cards">
         <div class="flex-a-center even col card">
-          <img src="images/pracbook.png" alt="not avialable" />
+          <div class="close-icon"><i class="bi bi-arrows-angle-contract" onclick=previewClose(event)></i></div>
+          <img src="images/resume.png" class="pre" alt="not avialable" />
+          <video src="videos/resume.mp4" class="pre" muted></video>
+          <span class="title">
+            Resume Maker
+          </span>
+          <p class="text-center brief">
+            Made a website to make and download resume pdf in GLA resume format by just adding details. made using MERN stack in a team of 2 members.
+          </p>
+          <div class="flex even buttons">
+            <button class="preview" onclick=preview(event)>
+              Preview&nbsp;&nbsp;
+              <i class="bi-caret-right-fill"></i>
+            </button>
+            <a href="https://make-my-resumes.herokuapp.com" target="_blank">
+              <button class="live">
+                Live&nbsp;&nbsp;
+                <i class="bi-box-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="flex-a-center even col card">
+          <div class="close-icon"><i class="bi bi-arrows-angle-contract" onclick=previewClose(event)></i></div>
+          <img src="images/pracbook.png" class="pre" alt="not avialable" />
+          <video src="videos/pracbook.mp4" class="pre" muted></video>
           <span class="title">
             PracBook
           </span>
@@ -158,9 +181,8 @@
             Made a portal for pracitcal examination, with support for both objective type and coding type questions,
             using MERN stack technology in a team of 4 members.
           </p>
-          <!-- <iframe width="500px" height="400px" src="https://pracbook.herokuapp.com"></iframe> -->
           <div class="flex even buttons">
-            <button class="preview">
+            <button class="preview" onclick=preview(event)>
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
@@ -173,7 +195,9 @@
           </div>
         </div>
         <div class="flex-a-center even col card">
-          <img src="images/guess.png" alt="not avialable" />
+          <div class="close-icon"><i class="bi bi-arrows-angle-contract" onclick=previewClose(event)></i></div>
+          <img src="images/guess.png" class="pre" alt="not avialable" />
+          <video src="videos/guess.mp4" class="pre" muted></video>
           <span class="title">
             Guess game
           </span>
@@ -181,9 +205,8 @@
             Guess game to guess the number selected by program, made using
             html, css, and javascript.
           </p>
-          <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/guess-game-with-js/"></iframe> -->
           <div class="flex even buttons">
-            <button class="preview">
+            <button class="preview" onclick=preview(event)>
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
@@ -196,7 +219,9 @@
           </div>
         </div>
         <div class="flex-a-center even col card">
-          <img src="images/froshhub.png" alt="not avialable" />
+          <div class="close-icon"><i class="bi bi-arrows-angle-contract" onclick=previewClose(event)></i></div>
+          <img src="images/froshhub.png" class="pre" alt="not avialable" />
+          <video src="videos/froshhub.mp4" class="pre" muted></video>
           <span class="title">
             Froshhub
           </span>
@@ -205,9 +230,8 @@
             technology, upcoming workshops, and about coding platforms and upcoming contests,
             using html, css, javascript, and firebase in a team of 4 members.
           </p>
-          <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/FroshHub/"></iframe> -->
           <div class="flex even buttons">
-            <button class="preview">
+            <button class="preview" onclick=preview(event)>
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
@@ -220,7 +244,9 @@
           </div>
         </div>
         <div class="flex-a-center even col card">
-          <img src="images/bounce.png" alt="not avialable" />
+          <div class="close-icon"><i class="bi bi-arrows-angle-contract" onclick=previewClose(event)></i></div>
+          <img src="images/bounce.png" class="pre" alt="not avialable" />
+          <video src="videos/bouncing-balls.mp4" class="pre" muted></video>
           <span class="title">
             Bouncing balls
           </span>
@@ -228,9 +254,8 @@
             Bouncing balls game, catch all the balls by clicking on them moving
             with different velocities, made using html, css, and js.
           </p>
-          <!-- <iframe width="500px" height="400px" src="https://rupin-1801.github.io/bouncing_balls/"></iframe> -->
           <div class="flex even buttons">
-            <button class="preview">
+            <button class="preview" onclick=preview(event)>
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
@@ -243,7 +268,9 @@
           </div>
         </div>
         <div class="flex-a-center even col card">
-          <img src="images/draw.png" alt="not avialable" />
+          <div class="close-icon"><i class="bi bi-arrows-angle-contract" onclick=previewClose(event)></i></div>
+          <img src="images/draw.png" class="pre" alt="not avialable" />
+          <video src="videos/drawing-board.mp4" class="pre" muted></video>
           <span class="title">
             Drawing board
           </span>
@@ -252,9 +279,8 @@
             and erasing with different stroke sizes, and changing stroke colour,
             made with html, css, and js.
           </p>
-          <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/drawing-board/"></iframe> -->
           <div class="flex even buttons">
-            <button class="preview">
+            <button class="preview" onclick=preview(event)>
               Preview&nbsp;&nbsp;
               <i class="bi-caret-right-fill"></i>
             </button>
@@ -266,68 +292,22 @@
             </a>
           </div>
         </div>
-        <div class="flex-a-center even col card">
-          <img src="images/clock.png" alt="not avialable" />
-          <span class="title">
-            Analog clock
-          </span>
-          <p class="text-center brief">
-            Displays your systems time in well designed analog as well as
-            digital clock, made using html, css, and javascript.
-          </p>
-          <!-- <iframe width="700px" height="500px" src="https://rupin-1801.github.io/analog-clock/"></iframe> -->
-          <div class="flex even buttons">
-            <button class="preview">
-              Preview&nbsp;&nbsp;
-              <i class="bi-caret-right-fill"></i>
-            </button>
-            <a href="https://rupin-1801.github.io/analog-clock/" target="_blank">
-              <button class="live">
-                Live&nbsp;&nbsp;
-                <i class="bi-box-arrow-up-right"></i>
-              </button>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
     <hr>
-    <section id="contact" class="flex-a-center even col contact">
-      <h3 class="text-center head">
-        Contact
-      </h3>
-      <form class="flex-a-center even col form">
-        <label for="name">
-          Name
-        </label>
-        <input type="name">
-        <label for="email">
-          Email
-        </label>
-        <input type="email">
-        <label for="message">
-          Message
-        </label>
-        <input id="message">
-        <button class="live">
-          Send
-        </button>
-      </form>
-      <hr>
-      <article id="rating" class="flex center likes">
-        <p>
-          <i id="like-button" class="bi-hand-thumbs-up"></i>
-          &nbsp;&nbsp;
-          <span id="like" class="value">49</span>
-        </p>
-        <p>
-          <i id="dislike-button" class="bi-hand-thumbs-down"></i>
-          &nbsp;&nbsp;
-          <span id="dislike" class="value">5</span>
-        </p>
-      </article>
-      <hr>
-    </section>
+    <article id="rating" class="flex center likes">
+      <p>
+        <i id="like-button" class="bi-hand-thumbs-up"></i>
+        &nbsp;&nbsp;
+        <span id="like" class="value">49</span>
+      </p>
+      <p>
+        <i id="dislike-button" class="bi-hand-thumbs-down"></i>
+        &nbsp;&nbsp;
+        <span id="dislike" class="value">5</span>
+      </p>
+    </article>
+    <hr>
   </section>
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/guessgame.js"></script>
